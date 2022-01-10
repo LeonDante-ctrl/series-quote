@@ -1,9 +1,8 @@
-import { Directive } from '@angular/core';
-import { Keys } from './keys';
+import { keys } from './keys';
 
-describe('Keys', () => {
-  it('create an instance', () => {
-    const directive = new Directive();
-    expect(directive).toBeTruthy();
+describe('keys', () => {
+  it('should create an instance', () => {
+    const Directive = new keys();
+    expect(keys).toBeTruthy();
   });
 });
