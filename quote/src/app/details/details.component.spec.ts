@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed,} from '@angular/core/testing';
 
 import { DetailsComponent } from './details.component';
 
@@ -6,12 +6,12 @@ describe('DetailsComponent', () => {
   let component: DetailsComponent;
   let fixture: ComponentFixture<DetailsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
       declarations: [ DetailsComponent ]
     })
     .compileComponents();
-  });
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(DetailsComponent);
@@ -19,7 +19,7 @@ describe('DetailsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create spec', () => {
     expect(component).toBeTruthy();
   });
 });
