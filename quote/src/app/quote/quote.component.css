@@ -1,0 +1,11 @@
+  .container-fluid{
+    text-align: center;
+    background-color:aquamarine;
+    font-family: 'Ariel', Times, serif;
+    font-size: 67px;
+  }
+
+  .myQuote{
+    padding: 21px;
+  }
+  
