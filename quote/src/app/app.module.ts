@@ -6,7 +6,7 @@ import { AppComponent } from '../app/app.component';
 import { FormComponent } from '../app/form/form.component';
 import { DetailsComponent } from './details/details.component';
 import { QuoteComponent } from './quote/quote.component';
-import { Keys } from './keys';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -15,7 +15,7 @@ import { Keys } from './keys';
     FormComponent,
     DetailsComponent,
     QuoteComponent,
-    Keys
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
